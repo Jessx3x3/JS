@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Algortimos básicos II</title>
+    </head>
+    <body>
+        <h1>Algorítmos Básicos II</h1>
+            <script>
+                /*Ejercicio 1:*/
+
+                console.log("Ejercicio 1: Positivos por BIG");
+                    function postxString(x){
+                        console.log("Arreglo: ",x);
+                            for (var i = 0; i < x.length; i++) {
+                                if (x[i]>0) {
+                                    x[i]="Big";
+                                }
+                            }
+                            return x;
+                    }
+                    a=postxString([-1,2,3,-2,5,-6]);
+                    console.log("Resultado: ",a);
+
+                /*Ejercicio 2:*/
+                console.log("Ejercicio 2: print menor, return mayor");
+                    function menMayo(x){
+                        console.log("Arreglo: ",x);
+                        max=x[0];
+                        min=x[0];
+                            for (var i = 0; i < x.length; i++) {
+                                if (x[i]>max) {
+                                    max=x[i];
+                                }
+                                if (x[i]<min) {
+                                    min=x[i];
+                                }
+                            }
+                            console.log("Print máx valor: ",max);
+                            return min;
+                    }
+                    b=menMayo([3,2,4,5,9,6,10,11,15,12]);
+                    console.log("Resultado: ", b);
+                
+                /*Ejercicio 3:*/
+                console.log("Ejercicio 3: print penúltimo, return 1er impar");
+                    function arreglo(x){
+                        console.log("Arreglo: ",x);
+                        impar=[];
+                            for (var i = 0; i < x.length; i++) {
+                                if((x[i])%2!=0){
+                                    impar.push(x[i]);
+                                }               
+                            }
+                            console.log("Print penúltimo: ",x[x.length-2]);
+                            return impar[0];
+                    }
+                    c=arreglo([2,3,4,6,8,3,5,6]);
+                    console.log("Resultado: ",c);
+
+                /*Ejercicio 4:*/
+                console.log("Ejercicio 4: Crear array duplicado(x2)");
+                    function duplicado(x){
+                        console.log("Arreglos: ",x);
+                        doble=[];
+                            for (var i = 0; i < x.length; i++) {
+                                doble.push(x[i]*2);
+                                doble.push(x[i]*2);
+                            }
+                            return doble;
+                    }
+
+                    d=duplicado([2,4,6,8,10]);
+                    console.log("Resultado: ",d);
+
+                /*Ejercicio 5: */
+                console.log("Ejercicio 5: Sumar + y cambiarlo por el último valor");
+                    function contarPositivos(x){
+                        console.log("Arreglos: ",x);
+                        cont=0;
+                            for (var i = 0; i < x.length; i++) {
+                                 if (x[i]>0) {
+                                     cont++;
+                                 }      
+                            }
+                            x[x.length]=cont;
+                            return x;
+                    }
+                    e=contarPositivos([-2,-4,-5,2,4,7,4,7,8]);
+                    console.log("Resultado: ",e);
+
+                /*Ejercicio 6:*/
+                console.log("Ejercicio 6: Valores impares seguidos y pares");
+                    function parImpar(x){
+                        console.log("Arreglo: ",x);
+
+                            for (var i = 0; i < x.length; i++) {
+                                if(x[i]>0){
+                                    if (x[i+1]>0) {
+                                        if (x[i+2]>0) {
+                                            console.log("¡Es para bien!");
+                                        }
+                                    }
+                                }
+                                if (x[i]<0) {
+                                    if (x[i+1]<0) {
+                                        if (x[i+2]<0) {
+                                            console.log("¡Qué imparcial!");
+                                        }
+                                    }
+                                }
+                            }
+                            return x;
+                    }
+                    f=parImpar([1,2,3,-5,-4,5,-2]);
+                    console.log("Resultado: ",f);
+
+                /*Ejercicio 7:*/
+                console.log("Ejercicio 7: Encontrar impares y agregar 1");
+                    function segundos(arr){
+                        console.log("Array: ",arr);
+                            for (var i = 0; i < arr.length; i++) {
+                                if((arr[i]%2)!=0){
+                                    arr[i]=arr[i]+1;
+                                }
+                            }
+                            return arr;
+                    }
+                    n=segundos([2,3,4,6,9,8,5,1]);
+                    console.log("Resultado: ",n);
+
+
+                /*Ejercicio 8:*/
+                console.log("Ejercicio 8: Reemplazar String por número longitud");
+                    function stringPorNum(x){
+                        console.log("Array: ",x);
+                        cont=0;
+                            for (var i = 0; i < x.length; i++) {
+                                cont= x[i].length;
+                                x[i]=cont;                 
+                            }
+                            return x;
+                    }
+                    g=stringPorNum(["coding","dojo","republica","temuco"]);
+                    console.log("Resultado: ",g);
+
+                /*Ejercicio 9:*/
+                console.log("Ejercicio 9: Agregar 7 a cada valor");
+                    function agregar7(x){
+                        console.log("Arreglo: ",x);
+                        nuevo=[];
+                            for (var i = 0; i < x.length; i++) {
+                                nuevo.push(x[i]+7);
+                            }
+                            return nuevo;
+                    }
+                    h= agregar7([4,2,5,3,8,2]);
+                    console.log("Resultado",h);
+
+                /*Ejercicio 10:*/
+                console.log("Ejercicio 10: Invertir Array");
+                    function invertirValores(x){
+                        console.log("Arreglo: ",x);
+                            console.log("No está realizado");
+                    }
+                    j=invertirValores([1,2,3,4,5,6]);
+                    console.log("Resultado: ",j);
+
+
+                /*Ejercicio 11:*/
+                console.log("Ejercicio 11: Crear array con valores negativos");
+                    function volverNegativos(x){
+                        console.log("Array: ",x);
+                        num_neg=[];
+                            for (var i = 0; i < x.length; i++) {
+                                   if(x[i]>0){
+                                       num_neg.push(x[i]*-1);
+                                   }else{
+                                       num_neg.push(x[i]);
+                                   }                     
+                            }
+                            return num_neg;
+                    }
+                    k=volverNegativos([-1,2,5,4,7,3,-3]);
+                    console.log("Resultado",k);
+
+                /*Ejercicio 12:*/
+                console.log("Ejercicio 12: yummy: comida, sin comida: tengo hambre. No está completo");
+                    function hambre(x){
+                        console.log("Array: ",x);
+                            for (var i = 0; i < x.length; i++) {
+                                if(x[i]=="comida"){
+                                    console.log("Yummy");
+                                }
+                            }
+                    }
+                    o=hambre(["hola","comida","bien"]);
+                    console.log("Resultado: ",o);
+                    
+
+                /*Ejercicio 13:*/
+                console.log("Ejercicio 13: Invertir valores");
+                    function invertirValor(x){
+                        console.log("Array: ",x);
+                            console.log("No realizado");
+                    }
+                    w=invertirValor([1,2,3,4,5,6]);
+                    console.log(w);
+                
+
+                /*Ejercicio 14*/
+                console.log("Ejercicio 14:");
+                    function multArray(arr,num){
+                            console.log("Array: ",arr);
+                                for (var i = 0; i < arr.length; i++) {
+                                    arr[i]=arr[i]*num;
+                                }
+                                return arr;
+
+                        }
+                    m=multArray([2,4,6],6);
+                    console.log("Resultado: ",m);
+            </script>
+    </body>
+</html>

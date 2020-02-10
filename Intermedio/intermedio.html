@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Intermedios</title>
+</head>
+<body>
+    <h1>Ejercicios Intermedios JS</h1>
+    <script>
+        function sigma(num){
+            console.log("<br>"+"Ejercicio 1: Sigma del número: ",num+"<br>");
+                sumatorio=0;
+                contador=num;
+                    while(contador!=0){
+                        sumatorio=sumatorio+contador;
+                        contador--;
+                    }     
+                    console.log(sumatorio);       
+        }
+        console.log(sigma(3));
+
+         /*Factorial*/
+        function factorial(n){
+            console.log("<br>"+"Ejercicio 2: factorial del número: ",n+"<br>");
+                mult=1;
+                    for (var i = 2; i <= n; i++) {
+                        mult=mult*i;
+                    }
+                    return mult;      
+        }
+        console.log(factorial(3));
+
+        /*Fibonacci*/
+
+        function fibonacci(a, b){
+            console.log("<br>"+"Ejercicio 3: Fibonacci desde el número: ",a," hasta: ",b+"<br>");
+            result=0;
+                for (var i = 1; i < 100; i++) {
+                    console.log("[",result,"]");
+                     result=a+b;
+                     a=b;
+                     b=result;
+                }
+         }
+        console.log(fibonacci(0,1));
+
+
+        /*Ejercicio 4:*/
+        console.log("Array Penúltimo: ");
+            function arrayPenultimo(x){
+                console.log("Array: ",x);
+                penultimo=0;
+                for (var i = 0; i < x.length; i++) {
+                    if(x.length==2){
+                        console.log("null");
+                    }
+                }
+                penultimo=x.length-1;
+                return penultimo;
+            }
+        d=arrayPenultimo([1,2,3,4,5,6,7,"Manuel"]);
+        console.log(d);   
+
+
+
+        /*Ejercicio 5:*/
+        console.log("Devuelve el elemento N");
+            function elementN(x,n){
+                ultimo=0;
+                console.log("Array :",x, ". n:",n);
+                for (var i = 0; i < x.length; i++){
+                    ultimo=x.length-(n-1);
+                }
+                return ultimo;
+            }
+        e=elementN([1,2,3,4,5,6,7],3);
+        console.log("Resultado: ", e);
+
+        
+        /*Ejercicio 6:*/
+        console.log("Devuelve el 2do más grande");
+            function secondBig(x){
+                max_1=x[0];
+                console.log("Array: ",x);
+                for (var i = 0; i < x.length; i++) {
+                    if(x[i]>max_1){
+                        max_1=x[i];
+                    }
+                }    
+                max=x[0];
+                for (var i = 0; i < x.length; i++) {
+                    if((x[i]>max)&&(x[i]!=max_1)){
+                        max=x[i];
+                    }    
+                }
+                return max;
+            }
+        f=secondBig([2,3,4,5,7,8,2,4,5,9,19,11,23]);
+        console.log("Resultado",f);    
+
+        /*Ejercicio 6:*/
+        console.log("Devuelve el 2do más grande");
+            function duplicar(x){
+                console.log("Array: ",x);
+                for (var i = 0; i < x.length; i++) {
+                    
+                }
+                return x;
+            }
+        g=duplicar([2,3,4,5,"Marcos","Javier",9]);
+        console.log("Resultado",g);    
+
+
+
+    </script>
+</body>
+</html>

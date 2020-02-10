@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrips JS Algorítmos</title>
+</head>
+<body>
+    <h1>Algorítmos con JS</h1>
+    <script>
+        console.log("Ejercicio 1:");
+            function a(){
+                return 35;
+            }
+            console.log(a());
+            console.log("Predicción Ejercicio 1: 35");
+
+        console.log("Ejercicio 2:");
+            function b(){
+                return 4;
+            }
+            console.log(b()+b());
+            console.log("Predicción Ejercicio 2: 8");
+
+        console.log("Ejercicio 3:");
+            function c(b){
+                return b;
+            }
+            console.log(c(2)+c(4));
+            console.log("Predicción Ejercicio 3: 6");
+
+        console.log("Ejercicio 4:");
+            function d(b){
+                    console.log(b);
+                    return b*3;
+            }
+            console.log(d(3));
+            console.log("Predicción Ejercicio 4: 9");
+
+        console.log("Ejercicio 5:");
+            function e(b){
+                return b*4;
+                console.log(b);
+            }
+            console.log(e(10));
+            console.log("Predicción Ejercicio 5: 40");
+
+        console.log("Ejercicio 6:");
+            function f(b){
+                if(b<10) {
+                    return 2;
+                }
+                else     {
+                    return 4;
+                }
+                console.log(b);
+            }
+            console.log(f(15));
+            console.log("Predicción Ejercicio 6: 4");
+
+        console.log("Ejercicio 7:");
+            function g(b,c){
+                return b*c;
+            }
+            console.log(10,3);
+            console.log( g(3,10) );
+            console.log("Predicción Ejercicio 7: 30");
+
+        console.log("Ejercicio 8:");
+            function h(b){
+                for(var i=0; i<10; i++){
+                    console.log(i);
+                }
+                return i;
+            }
+            console.log(3);
+            console.log(4);
+            console.log("Predicción Ejercicio 8: 3 y 4");
+
+        console.log("Ejercicio 9:");
+            function k(){
+                for(var i=0; i<10; i++){
+                    i = i +2;
+                    console.log(i);
+                }
+            }
+            k();
+            console.log("Predicción Ejercicio 9 ERRÓNEO [2,3,4,5,6,7,8,9,10,11]");
+
+        console.log("Ejercicio 10:");
+            function m(b,c){
+                for(var i=b; i<c; i++) {
+                console.log(i);
+            }
+            return b*c;
+            }
+            m(0,10);
+            console.log(m(0,10));
+            console.log("Predicción Ejercicio 10: [0,1,2,3,4,5,6,7,8,9][0,1,2,3,4,5,6,7,8,9,0]");
+
+        console.log("Ejercicio 11:");
+            function n(){
+                for(var i=0; i<10; i++){
+                for(var j=0; j<10; j++){
+                    console.log(j);
+                }
+                console.log(i);
+                }
+            }
+            console.log("Predicción Ejercicio 11: No llama función");
+
+        console.log("Ejercicio 12:");
+            function a(){
+                for(var i=0; i<10; i++){
+                    for(var j=0; j<10; j++){
+                        console.log(i,j);
+                    }
+                    console.log(j,i);
+                }
+            }   
+        console.log("Predicción Ejercicio 12: Indefinida");
+        console.log("Ejercicio 13:");
+        var z = 10;
+            function a(){
+                var z = 15;
+                console.log(z);
+            }
+            console.log(z);   
+            console.log("Predicción Ejercicio 13: 10")
+
+        console.log("Ejercicio 14:");
+            var z = 10;
+            function a(){
+                var z = 15;
+                console.log(z);
+            }
+            a();
+            console.log(z);
+            console.log("Predicción Ejercicio 14: 10")
+
+        console.log("Ejercicio 15:");
+            var z = 10;
+            function a(){
+                var z = 15;
+                console.log(z);
+                return z;
+            }
+            z = a();
+            console.log(z);
+            console.log("Predicción Ejercicio 15: 15");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+#content{
+    width: 1320px;
+    height: 500px;
+    display: inline-block;
+}
+.addClass{
+    height: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+    padding: 2%;
+    background-color: salmon;
+    color: cornsilk;
+}
+.slideToggle{
+    height: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+    padding: 2%;
+    background-color: salmon;
+    color: cornsilk;
+}
+.append{
+    height: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+    padding: 2%;
+    background-color: salmon;
+    color: cornsilk;
+
+}
+#btnAddClass, #btnSlideToggle, #btnAppend{
+    width: 25%;
+    height: 30%;
+    border-radius: 5%;
+    color: white;
+    background-color: tomato;
+}
+img{
+    width: 20%;
+}
