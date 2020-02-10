@@ -6,7 +6,9 @@ function creandoDiv(){
 }
 
 $(document).ready(function(){
-    
+
+    $("#img_cat").hide();
+
     $(".part_1").click(function(){
         $(this).css("background-image", "url(recursos/cat0.png)");
     })
