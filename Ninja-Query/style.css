@@ -1,0 +1,34 @@
+#content{
+    width: 1050px;
+    height: 760px;
+    outline: solid salmon;
+    background-color: salmon;
+}
+#box{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: salmon;
+}
+h1{
+    padding: 1%;
+    text-align: left;
+    background-color: seashell;
+}
+img{
+    width: 90%;
+    height: 60%;
+    margin: 1%;
+    padding: 3%;
+    outline: solid salmon;
+}
+#btn_restore{
+    width: 20%;
+    text-align: center;
+    color: seashell;
+    background-color: rebeccapurple;
+    font-size: 20px;
+    align-items: center;
+    margin: 2%;
+    border-radius: 12%;
+}
