@@ -1,0 +1,73 @@
+body{
+    background-color: wheat;
+    width: 400px;
+    outline: solid salmon;
+}
+
+div.row {
+    max-width: 320px;
+    max-height: 20px;
+}
+
+div.row div{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+div.brick{
+    background: url('recursos/brick.png');
+}
+div.coin{
+    background: url('recursos/coin.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+div.cereza{
+    background: url('recursos/cereza.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+#empty{}
+#pacman{
+    background: url('recursos/pacman.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+#pacman_alt{
+    background: url('recursos/pacman.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+#score{
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: sandybrown;
+    outline: solid salmon;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 350px;
+    
+}
+#score_alt{
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: sandybrown;
+    outline: solid salmon;
+    text-align: center;
+    position: absolute;
+    top: 270px;
+    left: 350px;
+}
