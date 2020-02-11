@@ -1,11 +1,11 @@
-#box{
-    width: 300px;
-    height: 300px;
-    background-color: salmon;
+#content{
+    width: 250px;
+    height: 400px;
 }
-#img_ninja{
-    width: 181px;
-    height: 273px;
-    padding: 5%;
-    margin: 12%;
+#box{
+    width: 200px;
+    height: 300px;
+    background-color: coral;
+    padding: 13%;
+    outline: solid crimson;
 }

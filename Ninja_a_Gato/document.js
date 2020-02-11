@@ -1,28 +1,9 @@
-
-function creandoDiv(){
-    for(var i=0; i<5; i++){
-
-    }
-}
-
 $(document).ready(function(){
-
-    $("#img_cat").hide();
-
-    $(".part_1").click(function(){
-        $(this).css("background-image", "url(recursos/cat0.png)");
-    })
-    $(".part_2").click(function(){
-        $(this).css("background-image", "url(recursos/cat1.png)");
-    })
-    $(".part_3").click(function(){
-        $(this).css("background-image", "url(recursos/cat2.png)");
-    })
-    $(".part_4").click(function(){
-        $(this).css("background-image", "url(recursos/cat3.png)");
-    })
-    $(".part_5").click(function(){
-        $(this).css("background-image", "url(recursos/cat4.png)");
+    
+    $("img").click(function(){
+        var src = $(this).attr("data-alt-src")
+        $(this).attr("data-alt-src", $(this).attr("src")) 
+        $(this).attr("src", src)
     })
 
 })
